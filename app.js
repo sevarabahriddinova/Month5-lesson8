@@ -8,7 +8,7 @@ const $formList=document.querySelector("#formList")
 const $listBtn=document.querySelector("#listBtn")
 const $main=document.querySelector("main")
 const $footer=document.querySelector("footer")
-
+const $section=document.querySelector("section")
     
 const NewNav= (e)=>{
   e.preventDefault();
@@ -18,6 +18,7 @@ $button.onclick = function () {
   $wrapperList.classList.add("show")
   $main.classList.add("show")
   $footer.classList.add("show2")
+  $section.classList.add("show2")
 
 }
 $formNav.addEventListener("click",NewNav)
@@ -133,23 +134,7 @@ $musiciansList.addEventListener("submit",createNewMusiciansList)
 $wrapper.addEventListener("submit",handleItemAction)
 
 // corusel
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
+ 
 
 
 const btn__knopka = document.querySelector(".btn__knopka");
