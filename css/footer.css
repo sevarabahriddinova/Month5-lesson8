@@ -1,11 +1,13 @@
 footer{
     background-color:#000000c0;
     width: 100%;
+    margin-top: 140px;
     
 }
 .footer__container{
     max-width: 1600px;
     margin:0 auto;
+    
 }
 .footer__title{
     text-decoration: none;
