@@ -39,12 +39,6 @@ $formNav.addEventListener("click",NewNav)
 //   $inputs.forEach(input.value)
 //   const list= new List($inputs[0].value,$inputs[1].value,$inputs[2].value)
 //   }
-    
-    
-    
-    
-    
-  
 
 //ro`yxat
 
@@ -52,9 +46,6 @@ $formNav.addEventListener("click",NewNav)
 const $musiciansList=document.querySelector("#musiciansList");
 const $inputs = $musiciansList.querySelectorAll(".formInput");
 const $wrapper=document.querySelector(".wrapper")
- 
- 
-
 
 const array=JSON.parse(localStorage.getItem(("list")))|| []
  
@@ -124,14 +115,15 @@ const filtrCategory=(e)=>{
     
 } 
 const handleItemAction = (e)=>{
-  if(e.target.classNmae==="delete"){
-   console.log( e.target.getAttribute("data-item-id"))
-
-  }
+  if(e.target.className==="delete"){
+   console.log( e.target.getAttribute("data-item-id"))   
+}
 }
 
+$wrapper.addEventListener("click",handleItemAction)
+
+
 $musiciansList.addEventListener("submit",createNewMusiciansList) 
-$wrapper.addEventListener("submit",handleItemAction)
 
 // corusel
  
