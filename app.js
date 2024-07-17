@@ -85,9 +85,7 @@ const renderMusicians = (array)=>{
             `
         });
       }
-      else{
-        $wrapper.innerHTML=""
-      }
+      
 }
 renderMusicians(array)
 
@@ -116,7 +114,13 @@ const filtrCategory=(e)=>{
 } 
 const handleItemAction = (e)=>{
   if(e.target.className==="delete"){
-   console.log( e.target.getAttribute("data-item-id"))   
+   console.log( e.target.getAttribute("data-item-id")) 
+  const id =+e.target.getAttribute("data-item-id")
+   console.log(array)
+   array.splice(id, 1)
+  localStorage.setItem("list",JSON.stringify(array))
+
+  renderMusicians(array)
 }
 }
 
@@ -126,8 +130,6 @@ $wrapper.addEventListener("click",handleItemAction)
 $musiciansList.addEventListener("submit",createNewMusiciansList) 
 
 // corusel
- 
-
 
 const btn__knopka = document.querySelector(".btn__knopka");
 const sidebar = document.querySelector(".sidebar");
