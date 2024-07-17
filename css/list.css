@@ -1,0 +1,31 @@
+
+
+#listInput{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);        height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+#formList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+#listBtn{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+#listBtn:active{
+    transform: scale(0.95);
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    
+}
+.show{
+    display: block;
+}
